@@ -17,12 +17,24 @@ module.exports = {
 	module: {
 		rules: [
 			{
+				test: /\.css$/,
+				loader: 'style-loader!css-loader',
+			},
+			{
 				test: /\.s[ac]ss$/i,
 				use: ['style-loader', 'css-loader', 'sass-loader'],
 			},
 			{
+				test: /\.(png|jpe?g|gif)$/i,
+				use: [
+					{
+						loader: 'file-loader',
+					},
+				],
+			},
+			{
 				test: /\.tsx?$/,
-				loader: 'awesome-typescript-loader',
+				loader: 'babel-loader',
 			},
 		],
 	},

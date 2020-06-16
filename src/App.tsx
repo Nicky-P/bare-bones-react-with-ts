@@ -1,8 +1,12 @@
-import * as React from 'react';
-import './style.scss';
+import React from 'react';
+import { Container } from 'react-bootstrap';
 
 function App() {
-	return <div className='body'>Hello World!</div>;
+	return (
+		<React.Fragment>
+			<Container fluid>Hello World</Container>
+		</React.Fragment>
+	);
 }
 
 export default App;
