@@ -2,11 +2,11 @@ import React from 'react';
 import { Container } from 'react-bootstrap';
 
 function App() {
-	return (
-		<React.Fragment>
-			<Container fluid>Hello World</Container>
-		</React.Fragment>
-	);
+  return (
+    <>
+      <Container fluid>Hello World</Container>
+    </>
+  );
 }
 
 export default App;
